@@ -54,13 +54,10 @@ PlatoFormChecker는 부산대학교 PLATO 등 학교 서버에서 과제 제출 
 
 ## 🧰 기술 스택 및 시스템 아키텍처
 
-- **Backend**: Python (FastAPI)
-- **Frontend**: React.js
-- **AI/ML**: Upstage Document Parser API, Solar LLM, RAG 파이프라인
-- **Infra**: Docker, AWS (EC2/S3), PLATO 연동 API
+- 개발 중입니다.
 
 ### 시스템 아키텍처
-![시스템 아키텍처](./assets/architecture.png)
+- 구체화 중입니다.
 
 ## 🔧 설치 및 사용 방법
 - 현재 작성중입니다.
