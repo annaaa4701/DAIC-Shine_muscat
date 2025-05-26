@@ -56,6 +56,11 @@ PlatoFormChecker는 부산대학교 PLATO 등 학교 서버에서 과제 제출 
 
 - 개발 중입니다.
 
+## 실행 방법
+### 백엔드
+- API_KEY=... 입력 (./.env/data.env)
+- uv run fastapi run main.py
+
 ### 시스템 아키텍처
 - 구체화 중입니다.
 
