@@ -29,15 +29,21 @@ const MainSection: React.FC = () => {
                 {`파일 이름부터 문서 속 작은 항목까지, 컴플레토가 꼼꼼하게 확인해 드립니다.\n사소한 실수로 인한 감점은 이제 그만! 제출 전 컴플레토로 완성도를 높이세요.`}
               </p>
               
-              <div className="pt-8">
+              <div className="pt-8 flex justify-center items-center">
                 <Link
                   to="/submit"
-                  className="inline-block px-12 py-6 text-xl font-bold rounded-lg shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 active:scale-95 transition-all duration-200"
+                  className="inline-block px-8 py-4 text-lg font-bold rounded-lg shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 active:scale-95 transition-all duration-200"
                   style={{
+                    marginTop: '32px',
                     backgroundColor: '#F4E7E1',
                     color: '#8B4513',
                     border: '3px solid #E5D3C8',
-                    boxShadow: '0 8px 25px rgba(244, 231, 225, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3)'
+                    boxShadow: '0 8px 25px rgba(244, 231, 225, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3)',
+                    width: '300px', // maxWidth 대신 width 사용
+                    height: '70px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.backgroundColor = '#F0DDD5';
@@ -50,9 +56,9 @@ const MainSection: React.FC = () => {
                     e.currentTarget.style.boxShadow = '0 8px 25px rgba(244, 231, 225, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3)';
                   }}
                 >
-                  <span className="flex items-center justify-center gap-3">
+                  <span className="flex items-center justify-center gap-3 w-full">
                     <span>지금 바로 검사 시작하기</span>
-                    <span className="text-2xl">🌭</span>
+                    <span className="text-xl">🌭</span>
                   </span>
                 </Link>
               </div>
@@ -66,7 +72,10 @@ const MainSection: React.FC = () => {
 
       {/* Features Section */}
       <section className="pt-20 pb-32 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div 
+  className="container mx-auto px-4 sm:px-6 lg:px-8"
+  style={{ marginTop: '180px' }}
+>
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-completo-redwood mb-6">
               컴플레토는 이렇게 도와드려요
