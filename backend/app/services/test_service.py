@@ -29,6 +29,21 @@ async def process_documents(docs_req: UploadFile, docs_assign: UploadFile):
     )
     html_req = parsed_req.get("content", {}).get("html", "")
     html_assign = parsed_assign.get("content", {}).get("html", "")
+
+    if not html_req:
+        return {
+            "parsed_request": "",
+            "parsed_assignment": "",
+            "chat_response": parsed_req.get("error", {}).get("message", "ERROR")
+        }
+    if not html_assign:
+        return {
+            "parsed_request": html_req,
+            "parsed_assignment": "",
+            "chat_response": parsed_assign.get("error", {}).get("message", "ERROR")
+        }
+
+
     client = ChatClient(api_key=os.getenv("API_KEY"))
     messages = [
         {"role": "system", "content": prompt},
@@ -40,10 +55,18 @@ async def process_documents(docs_req: UploadFile, docs_assign: UploadFile):
         messages=messages,
     )
 
+    chat_response = response.get("choices", [])[0].get("message", {}).get("content", "")
+    if not chat_response:
+        return {
+            "parsed_request": html_req,
+            "parsed_assignment": html_assign,
+            "chat_response": chat_response.get("error", {}).get("message", "ERROR")
+        }
+
     return {
-        "parsed_request": parsed_req["content"]["html"],
-        "parsed_assignment": parsed_assign["content"]["html"],
-        "chat_response": response["choices"][0]["message"]["content"]
+        "parsed_request": html_req,
+        "parsed_assignment": html_assign,
+        "chat_response": chat_response
     }
     
 
