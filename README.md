@@ -46,7 +46,7 @@ PlatoFormChecker는 부산대학교 PLATO 등 학교 서버에서 학생이 제�
 
 ## 🧰 기술 스택 및 시스템 아키텍처
 - 사용 언어: TypeScript, Python
-- 프레임워크: React, FastAPI
+- 프레임워크: React, FastAPI, Vite
 
 ### 시스템 아키텍처
 - 구체화 중입니다.
