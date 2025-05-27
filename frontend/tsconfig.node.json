@@ -11,15 +11,20 @@
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "noEmit": true,
-
+    // "noEmit": true, // 주석 처리 유지 (TS6306 오류 방지)
+    "emitDeclarationOnly": true, // TS5096 오류 해결을 위해 추가
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "composite": true
   },
-  "include": ["vite.config.ts"]
+  "include": [
+    "vite.config.ts",
+    "postcss.config.js", // 이 파일들이 .js라면 include에서 제외하거나, .ts로 변환 후 유지
+    "tailwind.config.js" // 이 파일들이 .js라면 include에서 제외하거나, .ts로 변환 후 유지
+  ]
 }

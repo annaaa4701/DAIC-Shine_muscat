@@ -1,7 +1,22 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "types": ["vite/client"],
+    "skipLibCheck": true,
+
+    // 추가 및 확인해야 할 옵션들
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "allowImportingTsExtensions": true, // .tsx 확장자 import 허용
+    "noEmit": true, // Vite가 빌드를 처리하므로 TypeScript는 파일을 생성하지 않음
+
+    // 기존에 있던 다른 옵션들 (예: strict 등)은 유지하거나 필요에 따라 추가합니다.
+    "strict": true // 가능하다면 활성화 권장
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
