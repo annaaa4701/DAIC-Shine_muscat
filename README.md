@@ -37,27 +37,59 @@ PlatoFormChecker는 부산대학교 PLATO 등 학교 서버에서 학생이 제�
   - 조건 해석이 모호한 경우, 추가 확인이 필요함을 학생에게 안내하여, 제출 오류를 예방합니다.
     
 ## 🖼️ 데모
-- 개발 중입니다.
+- 
 
 ## 🔬 기술 구현 요약
 
 - **Document Parser(document-parse-250508)**
 - **Solar LLM(solar-pro2-preview)**
 
-## 🧰 기술 스택 및 시스템 아키텍처
+## 🧰 기술 스택
 - 사용 언어: TypeScript, Python
 - 프레임워크: React, FastAPI, Vite
 
 ### 시스템 아키텍처
-- 구체화 중입니다.
+![alt text](image.png)
 
 ## 🔧 설치 및 사용 방법
+### 프론트엔드
+- cd frontend
+- npm run dev
 ### 백엔드
-- API_KEY=... 입력 (./.env/data.env)
+- API_KEY=... 입력 (backend/.env/data.env)
+- cd backend
 - uv run fastapi run main.py
 
 ## 📁 프로젝트 구조
-- ...
+```sh
+/
+├── frontend                 # 프론트엔드 코드
+│   ├── public/              # 정적 파일
+│   ├── src/                 # 소스 코드
+│   │   ├── assets/          # 이미지 및 기타 정적 자산
+│   │   ├── components/      # 재사용 가능한 UI 컴포넌트
+│   │   ├── pages/           # 페이지별 React 컴포넌트
+│   │   ├── types/           # TypeScript 타입 정의
+│   │   ├── App.tsx          # 메인 앱 파일
+│   │   ├── index.css        # 글로벌 스타일
+│   │   ├── main.tsx         # React 앱 진입점
+│   │   └── vite-env.d.ts    # Vite 환경 타입 정의
+│   ├── package.json         # 패키지 설정 및 의존성 관리
+│   ├── tailwind.config.js   # Tailwind CSS 설정
+│   ├── tsconfig.json        # TypeScript 설정
+│   ├── vite.config.ts       # Vite 설정 파일
+│   └── index.html           # HTML 템플릿
+├── backend                  # 백엔드 코드
+│   ├── .env/                # 환경 변수 파일
+│   ├── app/                 # FastAPI 애플리케이션 모듈
+│   │   ├── controllers/     # API 컨트롤러
+│   │   ├── models/          # 데이터 모델 및 관련 파일
+│   │   ├── routes/          # API 라우트 정의
+│   │   ├── services/        # 비즈니스 로직 및 서비스
+│   ├── temp/                 # 임시 파일 저장소
+│   └── main.py              # FastAPI 애플리케이션 진입점
+└── README.md                # 프로젝트 설명 문서
+```
 ## 🧑‍🤝‍🧑 팀원 소개
 
 | 이름    | 역할     | GitHub                                      |
