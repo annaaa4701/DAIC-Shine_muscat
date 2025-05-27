@@ -40,7 +40,7 @@ const SubmissionPage: React.FC = () => {
     formData.append('docs_assign', docsAssignFile);
 
     try {
-      const response = await fetch('/test', {
+      const response = await fetch('http://localhost:8000/test', {
         method: 'POST',
         body: formData,
       });
