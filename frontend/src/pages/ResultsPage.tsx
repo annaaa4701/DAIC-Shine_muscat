@@ -3,6 +3,7 @@ import { useLocation, Navigate } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import type { TestApiResponse } from '../types/api'; // 정의한 타입 import
+import './ResultsPage.css'; // 스타일 파일 추가
 
 const ResultsPage: React.FC = () => {
   const location = useLocation();
@@ -22,34 +23,26 @@ const ResultsPage: React.FC = () => {
   // 가능하다면 HTML을 파싱하여 안전하게 렌더링하는 라이브러리(예: DOMPurify) 사용을 고려하세요.
   // 여기서는 백엔드 응답이 신뢰 가능하다고 가정합니다.
   return (
-    <div>
+    <div className="results-page">
       <Header />
-      <main>
-        <h1>과제 양식 평가 결과</h1>
+      <main className="results-main">
+        <h1 className="results-title">과제 양식 평가 결과</h1>
         
-        <section>
-          <h2>LLM 평가 내용</h2>
-          {/* chat_response는 일반 텍스트일 가능성이 높으므로 그대로 표시하거나, 
-              만약 HTML이라면 dangerouslySetInnerHTML을 사용합니다. 
-              백엔드 응답 형식을 정확히 확인해야 합니다.
-              여기서는 일반 텍스트로 가정합니다. */}
-          <pre style={{ whiteSpace: 'pre-wrap', wordWrap: 'break-word', border: '1px solid #ccc', padding: '10px', backgroundColor: '#f9f9f9' }}>
+        <section className="results-section">
+          <h2 className="section-title">LLM 평가 내용</h2>
+          <pre className="chat-response">
             {apiResponse.chat_response}
           </pre>
-        </section>
-
-        <hr style={{ margin: '20px 0' }} />
-
-        <section>
-          <h2>요구사항 문서 (HTML 파싱 결과)</h2>
-          <div dangerouslySetInnerHTML={{ __html: apiResponse.parsed_request }} />
-        </section>
-        
-        <hr style={{ margin: '20px 0' }} />
-
-        <section>
-          <h2>제출 과제물 (HTML 파싱 결과)</h2>
-          <div dangerouslySetInnerHTML={{ __html: apiResponse.parsed_assignment }} />
+          <div className="parsed-content-container">
+            <div className="parsed-content-left">
+              <h3>요구사항 문서</h3>
+              <div className="parsed-content" dangerouslySetInnerHTML={{ __html: apiResponse.parsed_request }} />
+            </div>
+            <div className="parsed-content-right">
+              <h3>제출 과제물</h3>
+              <div className="parsed-content" dangerouslySetInnerHTML={{ __html: apiResponse.parsed_assignment }} />
+            </div>
+          </div>
         </section>
 
       </main>
