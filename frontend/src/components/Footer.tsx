@@ -1,28 +1,29 @@
 import React from "react";
 
 const Footer: React.FC = () => (
-  <footer className="flex justify-center">
-    <div className="flex max-w-[960px] flex-1 flex-col">
-      {/* Stitch HTML 구조와 유사하게 내부 footer 태그를 div로 변경하거나 유지할 수 있습니다. 여기서는 유지합니다. */}
-      <footer className="flex flex-col gap-6 px-5 py-10 text-center @container">
-        <div className="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-          <a
-            className="text-[#98b9c3] text-base font-normal leading-normal min-w-40"
-            href="/terms" // 내부 라우팅 예시
-          >
-            Terms of Service
-          </a>
-          <a
-            className="text-[#98b9c3] text-base font-normal leading-normal min-w-40"
-            href="/privacy" // 내부 라우팅 예시
-          >
-            Privacy Policy
-          </a>
-        </div>
-        <p className="text-[#98b9c3] text-base font-normal leading-normal">
-          © {new Date().getFullYear()} PlatoFormChecker. All rights reserved.
-        </p>
-      </footer>
+  <footer className="bg-completo-ochre/10 text-completo-redwood/70">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center">
+      <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mb-4">
+        <a
+          className="text-sm hover:text-completo-red transition-colors"
+          href="/terms" // 내부 라우팅 예시
+        >
+          이용약관
+        </a>
+        <a
+          className="text-sm hover:text-completo-red transition-colors"
+          href="/privacy" // 내부 라우팅 예시
+        >
+          개인정보처리방침
+        </a>
+        {/* <a className="text-sm hover:text-completo-red transition-colors" href="#">
+          FAQ
+        </a> */}
+      </div>
+      <p className="text-sm">
+        © {new Date().getFullYear()} 컴플레토 (Completo). All rights reserved.
+      </p>
+      <p className="text-xs mt-1">DAIC-Shine_muscat Team Project.</p>
     </div>
   </footer>
 );
