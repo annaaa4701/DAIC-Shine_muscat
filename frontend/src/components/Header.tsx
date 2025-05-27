@@ -1,21 +1,23 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import logoImage from "../assets/completo_logo.png";
 
 const Header: React.FC = () => {
   return (
     <header className="bg-[#F4E7E1] text-[#521C0D] sticky top-0 z-50 border-b border-[#521C0D]/10 w-full">
-      {/* 헤더 너비를 더 작게 제한 - max-w-md로 변경 */}
       <div className="max-w-md mx-auto grid grid-cols-[1fr_2fr_1fr] items-center px-4 sm:px-6 py-6 sm:py-8 lg:py-10">
-        {/* 1번째 컬럼: 로고 */}
-        <div className="justify-self-start">
+        {/* 로고 부분에 왼쪽 패딩 추가 */}
+        <div className="justify-self-start pl-4 sm:pl-6 lg:pl-8">
           <Link
             to="/"
             className="text-lg sm:text-xl font-semibold tracking-tight text-[#521C0D] no-underline"
           >
-            <h1>
-              컴플레토
-              <span className="text-[#FF9B45] ml-1.5"> Completo</span>
-            </h1>
+            <img
+              src={logoImage}
+              alt="컴플레토 로고"
+              className="h-6 w-auto max-w-[90px] sm:h-9 sm:max-w-[120px] lg:h-12 lg:max-w-[150px] 
+    transition-transform duration-300 hover:scale-110"
+            />
           </Link>
         </div>
 
@@ -47,8 +49,8 @@ const Header: React.FC = () => {
           </Link>
         </div>
 
-        {/* 3번째 컬럼: 서비스 소개 */}
-        <nav className="justify-self-end">
+        {/* 서비스 소개 부분에 오른쪽 패딩 추가 */}
+        <nav className="justify-self-end pr-4 sm:pr-6 lg:pr-8">
           <NavLink
             to="/service-info"
             className={({ isActive }) =>
