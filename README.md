@@ -1,4 +1,6 @@
 # PlatoFormChecker
+## 🗂️ 발표자료
+[👉 발표자료(슬라이드 보기)](https://www.canva.com/design/DAGoctCK6vY/ZRoN2Az_SBxJlSZ7vfe88g/edit?utm_content=DAGoctCK6vY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## 📌 개요
 PlatoFormChecker는 부산대학교 PLATO 등 학교 서버에서 학생이 제출하는 과제가 평문으로 제시된 제출 양식을 정확히 지켰는지 자동으로 검사해주는 AI 기반 문서 포맷 검증 서비스입니다. 학생은 제출 전, 파일명·확장자·문서 내 항목 등 세부 조건을 실시간으로 확인하고 오류를 바로잡을 수 있어, 사소한 실수로 인한 감점을 방지할 수 있습니다.
