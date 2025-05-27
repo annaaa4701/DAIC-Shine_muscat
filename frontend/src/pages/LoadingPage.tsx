@@ -1,15 +1,20 @@
 import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-const LoadingPage: React.FC = () => {
+const SubmissionPage: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-completo-ochre/20 text-completo-redwood">
-      <h1 className="text-4xl font-bold mb-4">열심히 분석 중... 🌭</h1>
-      <p className="text-lg mb-8">컴플레토가 과제 양식을 꼼꼼히 확인하고 있어요!</p>
-      {/* 여기에 로딩 애니메이션 (예: 스피너) 추가 */}
-      <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-completo-red"></div>
-      <p className="mt-8 text-sm">잠시만 기다려주세요...</p>
+    <div>
+      <Header />
+      <main className="flex flex-col items-center justify-center min-h-screen bg-completo-ochre/20 text-completo-redwood">
+        <h1 className="text-4xl font-bold mb-4">과제 제출 페이지</h1>
+        <p className="text-lg mb-8">이곳에 과제 파일(요구 조건 문서, 과제물)을 업로드하는 UI가 들어갑니다.</p>
+        <p className="mt-8 text-sm">잠시만 기다려주세요...</p>
+        {/* 파일 업로드 폼 컴포넌트 추가 예정 */}
+      </main>
+      <Footer />
     </div>
   );
 };
 
-export default LoadingPage;
+export default SubmissionPage;
