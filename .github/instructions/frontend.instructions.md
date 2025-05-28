@@ -19,7 +19,12 @@ applyTo: 'frontend/**'
 
 ## UI/UX 가이드라인
 
-*   우선 UI/UX 구성 전, 기초 구조부터 만들고 UI는 제작하도록 한다.
+*  **컬러 파레트**
+    * `#F4E7E1`: 주 배경색 (Page Background)
+    * `#FF9B45`: 주요 액션/강조 색상 (Primary Action, Accent) - 예: 핵심 버튼, 활성 요소
+    * `#D5451B`: 보조 액션/경고/오류 색상 (Secondary Action, Warning, Error) - 예: 보조 버튼, 오류 메시지
+    * `#521C0D`: 기본 텍스트/구분선/아이콘 색상 (Primary Text, Borders, Icons)
+
 
 ## 코딩 스타일 및 규칙
 
