@@ -127,7 +127,7 @@ const SubmissionPage: React.FC = () => {
                   <div className="space-y-2">
                     <p className="text-lg font-medium">요구사항 문서</p>
                     <p className="text-sm text-gray-500">
-                      {docsReqFile ? docsReqFile.name : 'PDF, DOC, DOCX, HWP, TXT (드래그하여 업로드)'}
+                      {docsReqFile ? docsReqFile.name : 'PDF, DOC, DOCX, HWP (드래그하여 업로드)'}
                     </p>
                     <button
                       type="button"
@@ -167,7 +167,7 @@ const SubmissionPage: React.FC = () => {
                   <div className="space-y-2">
                     <p className="text-lg font-medium">과제 파일</p>
                     <p className="text-sm text-gray-500">
-                      {docsAssignFile ? docsAssignFile.name : 'PDF, DOC, DOCX, HWP, TXT (드래그하여 업로드)'}
+                      {docsAssignFile ? docsAssignFile.name : 'PDF, DOC, DOCX, HWP (드래그하여 업로드)'}
                     </p>
                     <button
                       type="button"
