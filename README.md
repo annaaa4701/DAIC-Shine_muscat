@@ -71,7 +71,7 @@ Completo automatically checks if assignments submitted by students on university
 ### Backend
 - Set API_KEY in (backend/.env/data.env)
 - cd backend
-- uvicorn main:app --reload
+- uv run fastapi run main.py
 
 ## 📁 Project Structure
 ```sh
