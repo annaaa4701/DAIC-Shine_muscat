@@ -3,7 +3,7 @@
 [👉 발표자료(슬라이드 보기)](https://www.canva.com/design/DAGoctCK6vY/mVjrt25BcsVvaDrliRBNbQ/view?utm_content=DAGoctCK6vY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h99d67cfbba)
 
 ## 📌 개요
-(1.png)
+![alt text](1.png)
 Completo는 "Complete it, Perfect it, COMPLETO it!"이라는 비전으로 시작된 AI 기반 문서 포맷 검증 서비스입니다. 마치 완벽한 핫도그를 만들기 위해 모든 재료가 필요하듯이, 완벽한 과제를 위해서는 내용뿐만 아니라 양식도 중요합니다. 학생들이 사소한 양식 실수로 감점당하는 일을 방지하고, 교수들이 내용 평가에 집중할 수 있도록 돕는 것이 저희의 목표입니다.
 
 Completo는 부산대학교 PLATO 등 학교 서버에서 학생이 제출하는 과제가 평문으로 제시된 제출 양식을 정확히 지켰는지 자동으로 검사해줍니다. 학생은 제출 전, 파일명·확장자·문서 내 항목 등 세부 조건을 실시간으로 확인하고 오류를 바로잡을 수 있어, 사소한 실수로 인한 감점을 방지할 수 있습니다.
