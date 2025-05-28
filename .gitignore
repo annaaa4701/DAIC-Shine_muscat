@@ -190,3 +190,4 @@ cython_debug/
 #temp files
 temp/
 backend/.env/
+backend/.env/data.env
