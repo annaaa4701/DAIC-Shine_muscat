@@ -4,8 +4,8 @@
 **Languages**: [한국어](README.md) | [English](README_EN.md)
 
 ## 🗂️ Presentation Materials
-[👉 View Presentation Slides](https://www.canva.com/design/DAGoctCK6vY/mVjrt25BcsVvaDrliRBNbQ/view?utm_content=DAGoctCK6vY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h99d67cfbba)
-
+- [👉 View Presentation Slides](https://www.canva.com/design/DAGoctCK6vY/mVjrt25BcsVvaDrliRBNbQ/view?utm_content=DAGoctCK6vY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h99d67cfbba)
+- [👉 Demostratino Video](https://www.youtube.com/watch?v=PIF_YogB2ZA)
 ## 📌 Overview
 ![alt text](1.png)
 Completo is an AI-powered document format verification service that began with the vision "Complete it, Perfect it, COMPLETO it!" 
