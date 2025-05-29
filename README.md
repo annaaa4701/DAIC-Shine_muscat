@@ -92,7 +92,7 @@ Completo는 "Complete it, Perfect it, COMPLETO it!"이라는 비전으로 시작
 
 **실제 테스트 케이스**
 ![alt text](7.png)
-![alt text](8d.png)
+![alt text](8.png)
 - 과제명: "Introduction to Computer Vision: Assignment 4"
 - 검증 항목: 표지 유무, 학번/이름 명시, 섹션별 설명 완성도
 - 결과: 6개 부족 사항 발견 및 구체적 개선 방안 제시
