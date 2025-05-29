@@ -5,6 +5,7 @@
 
 ## 🗂️ 발표자료
 [👉 발표자료(슬라이드 보기)](https://www.canva.com/design/DAGoctCK6vY/mVjrt25BcsVvaDrliRBNbQ/view?utm_content=DAGoctCK6vY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h99d67cfbba)
+
 [👉 데모 영상(Youtube)](https://www.youtube.com/watch?v=PIF_YogB2ZA)
 
 ## 📌 개요
