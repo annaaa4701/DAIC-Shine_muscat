@@ -1,7 +1,7 @@
 # Completo!
 **AI-powered Assignment Format Verification System**
 
-**Languages**: [🇰🇷 한국어](README.md) | [🇺🇸 English](README_EN.md)
+**Languages**: [한국어](README.md) | [English](README_EN.md)
 
 ## 🗂️ Presentation Materials
 [👉 View Presentation Slides](https://www.canva.com/design/DAGoctCK6vY/mVjrt25BcsVvaDrliRBNbQ/view?utm_content=DAGoctCK6vY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h99d67cfbba)
